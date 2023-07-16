@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <!-- CSS Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- My CSS -->
+    <style>
+      /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      /*Style
+https://www.toptal.com/designers/subtlepatterns/uploads/email-pattern.png*/
+
+      body {
+        background-color: #ffffbf;
+
+        color: #333;
+        font: 16px/28px arial sans-serif;
+      }
+
+      .topbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 45px;
+        z-index: 9999;
+        background-color: #ffc107;
+      }
+
+      .container {
+        width: 960px;
+        margin: 80px auto;
+        background-color: #fff;
+        position: relative;
+      }
+
+      div .hhh {
+        padding: 20px;
+        padding-bottom: 30px;
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      .header a {
+        text-decoration: none;
+        color: salmon;
+        padding: 3px;
+      }
+
+      .header a:hover {
+        background-color: lightskyblue;
+        color: white;
+      }
+
+      .hero {
+        height: 320px;
+        background-image: url(img/hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 -770px;
+        border-top: 5px solid #ffc107;
+        border-bottom: 5px solid lightskyblue;
+      }
+
+      .main {
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .main h2 {
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .main h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        padding: 5px;
+      }
+
+      .main .penulis {
+        font-size: 11px;
+        margin-top: -5px;
+        text-indent: 0px;
+      }
+
+      .main span {
+        color: #ffc107;
+      }
+
+      .main p {
+        margin-bottom: 20px;
+        font-size: 14px;
+        text-align: justify;
+        text-indent: 20px;
+      }
+
+      .footer {
+        width: 960px;
+        margin-left: -12px;
+        background-color: #ffc107;
+        padding: 6px;
+      }
+
+      .footer .copy {
+        font-size: 12px;
+        text-align: center;
+        color: #fff;
+      }
+
+      /*clearfix*/
+      .cf:before,
+      .cf:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+      }
+
+      .cf:after {
+        clear: both;
+      }
+
+      .cf {
+        *zoom: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="topbar">
+      <a href="index.html#blog"><i class="bi bi-arrow-left fs-1 mb-1 text-white ms-5 ps-5 p-3"> </i> </a>
+    </div>
+
+    <div class="container">
+      <div class="hhh">
+        <h2 class="text-center fs-1 mt-3 p-3">Welcome to my blog</h2>
+      </div>
+      <div class="hero"></div>
+      <div class="content cf">
+        <div class="main">
+          <h2>Menjelajahi Interaksi yang Memukau antara Teknologi dan Sains</h2>
+          <p class="penulis">ditulis oleh <span>Muhamad Nur Khanib</span>. Pada 17 Juli 2023.</p>
+
+          <p>
+            Teknologi dan sains adalah dua bidang yang saling terkait erat yang terus mendorong batas-batas pengetahuan dan inovasi manusia. Kemajuan luar biasa yang kita saksikan hari ini adalah hasil dari upaya kolaboratif keduanya. Dalam
+            artikel ini, kita akan mempelajari hubungan yang menarik antara teknologi dan sains, mengeksplorasi bagaimana keduanya saling mendorong kemajuan satu sama lain dan membentuk dunia kita.
+          </p>
+
+          <h3>1. Mendorong Penemuan Ilmiah</h3>
+          <p>
+            Teknologi berfungsi sebagai katalisator untuk terobosan ilmiah dengan menyediakan alat dan instrumen yang kuat bagi para ilmuwan. Mulai dari teleskop dan mikroskop hingga akselerator partikel dan pengurut gen, teknologi canggih
+            memungkinkan para ilmuwan untuk mengamati dan menyelidiki dunia alami dengan detail yang belum pernah terjadi sebelumnya. Alat-alat ini memberdayakan para peneliti untuk menjelajahi batas-batas baru, mengungkap misteri yang
+            rumit, dan memperdalam pemahaman kita tentang alam semesta.
+          </p>
+
+          <h3>2. Mempercepat Analisis dan Pemodelan Data</h3>
+          <p>
+            Pertumbuhan teknologi yang eksponensial telah merevolusi analisis dan pemodelan data dalam penelitian ilmiah. Komputer berkinerja tinggi, algoritme pembelajaran mesin, dan teknik visualisasi data memungkinkan para ilmuwan
+            memproses data dalam jumlah besar dengan cepat dan efisien. Hal ini memungkinkan mereka untuk mengidentifikasi pola, mengungkap hubungan yang tersembunyi, dan mengembangkan model yang akurat untuk mensimulasikan fenomena yang
+            kompleks, mulai dari pola iklim hingga interaksi molekuler.
+          </p>
+
+          <h3>3. Inovasi untuk Instrumentasi Ilmiah</h3>
+          <p>
+            Kemajuan teknologi telah mengarah pada pengembangan instrumen ilmiah mutakhir dengan presisi, sensitivitas, dan resolusi yang ditingkatkan. Sebagai contoh, penemuan mikroskop gaya atom telah memungkinkan para ilmuwan untuk
+            memeriksa permukaan pada skala nano, membuka jalan baru dalam ilmu pengetahuan material dan teknologi nano. Demikian pula, kemajuan dalam spektroskopi, pengurutan DNA, dan teknik pencitraan telah merevolusi bidang-bidang seperti
+            genetika, kedokteran, dan kimia.
+          </p>
+
+          <h3>4. Kolaborasi Antardisiplin Ilmu</h3>
+          <p>
+            Teknologi dan ilmu pengetahuan berkembang melalui kolaborasi interdisipliner. Ilmuwan dari berbagai disiplin ilmu berkolaborasi dengan insinyur, ilmuwan komputer, dan ahli teknologi untuk mengatasi tantangan yang kompleks.
+            Misalnya, bidang bioinformatika menggabungkan biologi, ilmu komputer, dan statistik untuk menganalisis data biologis. Perpaduan keahlian yang berbeda menghasilkan solusi inovatif dan penyerbukan silang ide, yang menghasilkan
+            penemuan inovatif.
+          </p>
+          <h3>5. Teknologi sebagai Platform untuk Komunikasi Ilmiah</h3>
+          <p>
+            Di era digital saat ini, teknologi telah mengubah cara penyebaran pengetahuan ilmiah. Platform online, jurnal ilmiah, dan repositori pracetak memungkinkan para peneliti untuk membagikan temuan mereka dengan cepat dan global,
+            mendorong kolaborasi dan mempercepat laju kemajuan ilmiah. Selain itu, kemajuan dalam virtual reality (VR) dan augmented reality (AR) menawarkan platform yang imersif untuk visualisasi ilmiah dan pendidikan, meningkatkan
+            pemahaman kita tentang konsep-konsep yang kompleks.
+          </p>
+
+          <h3>6. Inovasi Teknologi yang Didorong oleh Sains</h3>
+          <p>
+            Penemuan ilmiah sering kali menginspirasi kemajuan teknologi yang membentuk berbagai aspek kehidupan kita. Misalnya, penemuan sifat-sifat laser menghasilkan banyak aplikasi, mulai dari komunikasi optik dan diagnostik medis
+            hingga manufaktur dan hiburan. Demikian pula, kemajuan dalam ilmu material dan fisika kuantum telah membuka jalan bagi perkembangan energi terbarukan, superkonduktivitas, dan komputasi kuantum.
+          </p>
+
+          <h3>Kesimpulan</h3>
+          <p>
+            Interaksi antara teknologi dan sains merupakan hubungan dinamis dan simbiosis yang mendorong kemajuan manusia ke depan. Teknologi memberdayakan para ilmuwan untuk mengeksplorasi, menganalisis, dan memodelkan dunia alam,
+            sementara penemuan ilmiah mendorong inovasi teknologi dan membentuk masyarakat kita. Ketika kita terus merangkul kemungkinan yang ditawarkan oleh hubungan sinergis ini, kita dapat mengantisipasi kemajuan yang lebih luar biasa
+            yang akan membentuk kembali masa depan kita dan membuka misteri alam semesta kita.
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="copy">Copyright &copy; 2023. Muhamad Nur Khanib.</p>
+      </div>
+    </div>
+
+    <!-- javascript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+
+    <!-- Javascript animasi pada jumbotron -->
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { duration: 2, delay: 1.5, text: "Students | Network Engineer" });
+      gsap.from(".jumbotron img", { duration: 1, y: -100, opacity: 0, ease: "bounce" });
+      gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, ease: "back", delay: 0.5 });
+    </script>
+
+    <!-- javascript input contact -->
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbze0njz_cVhbkRfFi17HozshEQTXILFgzGJwRet97uBymhXReriZRWQP3BeGTenMSDTVw/exec";
+      const form = document.forms["form-contact"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        //ketika tombil kirim diklik
+        //tampilkan tombil loading, hilangkan tombil kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            //tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            //tampilkan alert
+            myAlert.classList.toggle("d-none");
+            //reset formnya
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
