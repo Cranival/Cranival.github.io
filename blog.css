@@ -154,12 +154,9 @@ body {
   bottom: 2px;
   margin-bottom: 3px;
 }
-.topbarr i:hover a {
-  color: lightskyblue;
-}
 
 #container {
-  margin-top: 40px;
+  margin-top: 80px;
   margin-bottom: -20px;
   padding: 0;
   background-color: #fff;
