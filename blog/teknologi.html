@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="../dist/css/final.css" rel="stylesheet" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- akhir AOS -->
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="../dist/css/blog.css">
+    <!-- akhir my CSS -->
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+  </head>
+  <body class=" bg-slate-100 dark:bg-dark" id="home">
+    <!-- Header Start -->
+    <header class="nav absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="../index.html#teknologi" class="block py-6  font-bold text-primary text-4xl">⇦</a>
+          </div>
+          <div class="flex items-center px-4">
+            
+            <nav
+              id="nav-menu"
+              class="right-4 w-full py-3 dark:shadow-slate-500 static block max-w-full rounded-none transparent shadow-none dark:bg-transparent">
+              <ul class="block lg:flex">
+                <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">light</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">dark</span>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Content -->
+    <div class="container pt-40  bg-slate-100 dark:bg-slate-800" id="container">
+      <div class="hhh">
+        <h2 class="mb-4 text-center text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Tulisan Terkini</h2>
+      </div>
+      <div class="hero hero-teknologi"></div>
+      <div class="content">
+        <div class="mainn">
+          <h2 class="pt-3  text-dark dark:text-white"></h2>
+          <p class="penuliss text-secondary dark:text-white"><span class="span text-primary"></span></p>
+
+          <p class="pendahuluan text-secondary dark:text-white"></p>
+
+          <h3 class="judul-p1 text-dark dark:text-white"></h3>
+          <p class="p1 text-secondary dark:text-white"></p>
+
+          <h3 class="judul-p2 text-dark dark:text-white"></h3>
+          <p class="p2 text-secondary dark:text-white"></p>
+
+          <h3 class="judul-p3 text-dark dark:text-white"></h3>
+          <p class="p3 text-secondary dark:text-white"></p>
+
+          <h3 class="judul-p4 text-dark dark:text-white"></h3>
+          <p class="p4 text-secondary dark:text-white"></p>
+          <h3 class="judul-p5 text-dark dark:text-white"></h3>
+          <p class="p5 text-secondary dark:text-white"></p>
+
+          <h3 class="judul-p6 text-dark dark:text-white"></h3>
+          <p class="p6 text-secondary dark:text-white"></p>
+
+          <h3 class="judul-k text-dark dark:text-white"></h3>
+          <p class="k text-secondary dark:text-white"></p>
+        </div>
+      </div>
+    <!-- akhir content -->
+
+    <!-- Footer Start -->
+    <div class="footerss">
+      <p class="copy">Copyright &copy; 2023.<span class="text-primary"> Muhamad Nur Khanib.</span></p>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to top Start -->
+    <a href="#" class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
+      <span class="mt-2 block h-5 w-5 text-3xl text-center mb-6">⇧</span>
+    </a>
+    <!-- Back to top End -->
+
+    <script src="../dist/js/script.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- akhir AOS -->
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+
+ <!-- GSAP animasi pada jumbotron -->
+ <script>
+ gsap.registerPlugin(TextPlugin);
+      gsap.to(".mainn h2", { duration: 0.4, delay: 1.5, text: "Menjelajahi Interaksi yang Memukau antara Teknologi dan Sains" });
+      gsap.to(".penuliss", { duration: 2, delay: 3, text: "ditulis oleh <span>Muhamad Nur Khanib</span>. Pada 17 Juli 2023." });
+      gsap.to(".pendahuluan", {
+        duration: 0.4,
+        delay: 2,
+        text: "Teknologi dan sains adalah dua bidang yang saling terkait erat yang terus mendorong batas-batas pengetahuan dan inovasi manusia. Kemajuan luar biasa yang kita saksikan hari ini adalah hasil dari upaya kolaboratif keduanya. Dalam artikel ini, kita akan mempelajari hubungan yang menarik antara teknologi dan sains, mengeksplorasi bagaimana keduanya saling mendorong kemajuan satu sama lain dan membentuk dunia kita.",
+      });
+      gsap.to(".judul-p1", {
+        duration: 0.4,
+        delay: 2.4,
+        text: "1. Mendorong Penemuan Ilmiah",
+      });
+      gsap.to(".p1", {
+        duration: 0.5,
+        delay: 2.5,
+        text: "Teknologi berfungsi sebagai katalisator untuk terobosan ilmiah dengan menyediakan alat dan instrumen yang kuat bagi para ilmuwan. Mulai dari teleskop dan mikroskop hingga akselerator partikel dan pengurut gen, teknologi canggih memungkinkan para ilmuwan untuk mengamati dan menyelidiki dunia alami dengan detail yang belum pernah terjadi sebelumnya. Alat-alat ini memberdayakan para peneliti untuk menjelajahi batas-batas baru, mengungkap misteri yang rumit, dan memperdalam pemahaman kita tentang alam semesta.",
+      });
+      gsap.to(".judul-p2", {
+        duration: 0.2,
+        delay: 3,
+        text: "2. Mempercepat Analisis dan Pemodelan Data",
+      });
+      gsap.to(".p2", {
+        duration: 0.5,
+        delay: 3.1,
+        text: "Pertumbuhan teknologi yang eksponensial telah merevolusi analisis dan pemodelan data dalam penelitian ilmiah. Komputer berkinerja tinggi, algoritme pembelajaran mesin, dan teknik visualisasi data memungkinkan para ilmuwan memproses data dalam jumlah besar dengan cepat dan efisien. Hal ini memungkinkan mereka untuk mengidentifikasi pola, mengungkap hubungan yang tersembunyi, dan mengembangkan model yang akurat untuk mensimulasikan fenomena yang kompleks, mulai dari pola iklim hingga interaksi molekuler.",
+      });
+      gsap.to(".judul-p3", {
+        duration: 0.2,
+        delay: 3.4,
+        text: "3. Inovasi untuk Instrumentasi Ilmiah",
+      });
+      gsap.to(".p3", {
+        duration: 0.5,
+        delay: 3.8,
+        text: "Kemajuan teknologi telah mengarah pada pengembangan instrumen ilmiah mutakhir dengan presisi, sensitivitas, dan resolusi yang ditingkatkan. Sebagai contoh, penemuan mikroskop gaya atom telah memungkinkan para ilmuwan untuk memeriksa permukaan pada skala nano, membuka jalan baru dalam ilmu pengetahuan material dan teknologi nano. Demikian pula, kemajuan dalam spektroskopi, pengurutan DNA, dan teknik pencitraan telah merevolusi bidang-bidang seperti genetika, kedokteran, dan kimia.",
+      });
+      gsap.to(".judul-p4", {
+        duration: 1,
+        delay: 4,
+        text: "4. Kolaborasi Antardisiplin Ilmu",
+      });
+      gsap.to(".p4", {
+        duration: 1,
+        delay: 4,
+        text: "Teknologi dan ilmu pengetahuan berkembang melalui kolaborasi interdisipliner. Ilmuwan dari berbagai disiplin ilmu berkolaborasi dengan insinyur, ilmuwan komputer, dan ahli teknologi untuk mengatasi tantangan yang kompleks. Misalnya, bidang bioinformatika menggabungkan biologi, ilmu komputer, dan statistik untuk menganalisis data biologis. Perpaduan keahlian yang berbeda menghasilkan solusi inovatif dan penyerbukan silang ide, yang menghasilkan penemuan inovatif.",
+      });
+      gsap.to(".judul-p5", {
+        duration: 1.2,
+        delay: 4,
+        text: "5. Teknologi sebagai Platform untuk Komunikasi Ilmiah",
+      });
+      gsap.to(".p5", {
+        duration: 1.2,
+        delay: 4,
+        text: "Di era digital saat ini, teknologi telah mengubah cara penyebaran pengetahuan ilmiah. Platform online, jurnal ilmiah, dan repositori pracetak memungkinkan para peneliti untuk membagikan temuan mereka dengan cepat dan global, mendorong kolaborasi dan mempercepat laju kemajuan ilmiah. Selain itu, kemajuan dalam virtual reality (VR) dan augmented reality (AR) menawarkan platform yang imersif untuk visualisasi ilmiah dan pendidikan, meningkatkan pemahaman kita tentang konsep-konsep yang kompleks.",
+      });
+      gsap.to(".judul-p6", {
+        duration: 1.4,
+        delay: 4,
+        text: "6. Inovasi Teknologi yang Didorong oleh Sains",
+      });
+      gsap.to(".p6", {
+        duration: 1.4,
+        delay: 4,
+        text: "Penemuan ilmiah sering kali menginspirasi kemajuan teknologi yang membentuk berbagai aspek kehidupan kita. Misalnya, penemuan sifat-sifat laser menghasilkan banyak aplikasi, mulai dari komunikasi optik dan diagnostik medis hingga manufaktur dan hiburan. Demikian pula, kemajuan dalam ilmu material dan fisika kuantum telah membuka jalan bagi perkembangan energi terbarukan, superkonduktivitas, dan komputasi kuantum.",
+      });
+      gsap.to(".judul-k", {
+        duration: 1.6,
+        delay: 4,
+        text: "Kesimpulan",
+      });
+      gsap.to(".k", {
+        duration: 1.6,
+        delay: 4,
+        text: "Interaksi antara teknologi dan sains merupakan hubungan dinamis dan simbiosis yang mendorong kemajuan manusia ke depan. Teknologi memberdayakan para ilmuwan untuk mengeksplorasi, menganalisis, dan memodelkan dunia alam, sementara penemuan ilmiah mendorong inovasi teknologi dan membentuk masyarakat kita. Ketika kita terus merangkul kemungkinan yang ditawarkan oleh hubungan sinergis ini, kita dapat mengantisipasi kemajuan yang lebih luar biasa yang akan membentuk kembali masa depan kita dan membuka misteri alam semesta kita.",
+      });
+      gsap.from(".hhh h2", { duration: 1, y: -100, opacity: 0, ease: "bounce" });
+      gsap.from(".heroo", { duration: 1, x: -50, opacity: 0, ease: "back", delay: 0.5 });
+</script> 
+<!-- akhir GSAP animasi pada jumbotron -->
+    <!-- Akhir GSAP -->
+  </body>
+</html>
