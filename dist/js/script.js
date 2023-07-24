@@ -41,7 +41,6 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwk4_bFiBj6V9fX31aFkc
 const form = document.forms['form-contact']
 const btnKirim = document.querySelector(".btn-kirim");
 const btnLoading = document.querySelector(".btn-loading");
-const myAlert = document.querySelector(".my-alert");
 
 form.addEventListener('submit', e => {
   e.preventDefault()
@@ -55,7 +54,7 @@ form.addEventListener('submit', e => {
       btnLoading.classList.toggle("hidden");
       btnKirim.classList.toggle("hidden");
       //tampilkan alert
-      myAlert.classList.toggle("hidden");
+      swal("Terimakasih!", "Pesan anda sudah kami terima!", "success");
       //reset formnya
       form.reset();
       console.log('Success!', response);
@@ -63,5 +62,4 @@ form.addEventListener('submit', e => {
     .catch(error => console.error('Error!', error.message))
 })
 // akhir input contact
-
 
