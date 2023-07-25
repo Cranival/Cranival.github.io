@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
     <link href="dist/css/final.css" rel="stylesheet" />
+    <!-- my style -->
+      <style>
+      .box{
+        min-height: 150px;
+        background-position: top;
+        transition: ease-in-out 3.3s;
+      }
+      .box.box-1{
+        background-image: url(dist/img/portofolio/1-full.png);
+        background-size: cover;
+        transition: ease-in-out 2.2s;
+      }
+      .box.box-2{
+        background-image: url(dist/img/portofolio/2-full.png);
+        background-size: cover;
+      }
+      .box:hover{
+        background-position: bottom;
+      }
+    </style>
+    <!-- akhir my style -->
     <!-- icon -->
     <link rel="website icon" type="jpg" href="dist/img/kanna-nobg.png">
     <!-- akhir icon -->
@@ -213,18 +234,16 @@
           </div>
         </div>
 
-        <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12 ">
-          <div class="mb-12 p-4 md:w-1/2" data-aos="zoom-in" data-aos-duration="600">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portofolio/1.png" alt="Artical Page" width="w-full" />
+        <div class="flex w-full h-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12 xl:h-5/6">
+          <div class="mb-12 p-4 md:w-1/2 md:h-1/2" data-aos="zoom-in" data-aos-duration="600">
+            <div class="overflow-hidden rounded-md shadow-md box box-1 sm:h-60 md:h-64 lg:64 bg-black">
             </div>
             <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Article page</h3>
             <p class="text-base font-medium text-secondary">Halaman artikel ini, adalah Project Pertama, yang saya buat semua menggunakan HTML dan CSS.</p>
             <a href="https://cranival.github.io/Artical-Page/" target="_blank" class="text-primary">Lihat Website ◱</a>
           </div>
           <div class="mb-12 p-4 md:w-1/2" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portofolio/2.png" alt="Personal Website" width="w-full" />
+            <div class="overflow-hidden rounded-md shadow-md box box-2 sm:h-60 md:h-64 lg:64 bg-black">
             </div>
             <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Personal Website</h3>
             <p class="text-base font-medium text-secondary">Situs web pribadi ini, Saya buat menggunakan Framework CSS yaitu Bootstrap 5, dan sudah memiliki animasi dari AOS dan GSAP, dilengkapi juga fitur Contact me yang bisa di gunakan.</p>
@@ -552,4 +571,3 @@ window.addEventListener('click', function (e) {
 <!-- akhir Humburger menu -->
   </body>
 </html>
-
